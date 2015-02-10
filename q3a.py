@@ -8,7 +8,7 @@ from sklearn import metrics
 
 data = pd.read_table('yelp_reviewers.txt', sep='|')
 
-VA = data[['q7','q8','q9']].values
+VA = data[['q8','q9','q10']].values
 
 maskarr = ma.masked_array(VA, np.isnan(VA))
 maskmean = maskarr.mean()
