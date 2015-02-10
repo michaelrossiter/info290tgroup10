@@ -6,6 +6,14 @@ import sklearn
 from sklearn.cluster import KMeans
 from sklearn import metrics
 
+
+
+# Strategy for q6:
+	# build array with necessary data field (q8-q13, q16, log of q17),
+	# mask the array to clean NaN, inf, and -inf values
+	# then run Kmeans and silhouette score at k=5
+
+
 data = pd.read_table('yelp_reviewers.txt', sep='|')
 
 VA = data[['q7','q8','q9']].values

@@ -41,4 +41,3 @@ df_clusters = pd.pivot_table(df, values=['counter'], index=["Cluster"], aggfunc=
 
 print df_clusters[:10]
 # print df_clusters 
-
